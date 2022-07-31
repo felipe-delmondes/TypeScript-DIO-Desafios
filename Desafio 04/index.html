@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03 - TypeScript</title>
+    <script src="./app.js" defer></script>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .Campos {
+            display: flex;
+            max-width: 70%;
+            font-family: sans-serif;
+            font-size: 15px;
+            align-items: center;
+            background-color: grey;
+            justify-content:space-around;
+            border:1px solid green;
+
+        }
+
+        input[type="text"]
+        {
+        font-size:17px;
+        }
+
+        .Campos span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            padding: 3px;
+            border-radius: 5%;
+            color:black
+        }
+
+        .Botoes{
+            display: flex;
+            max-width: 70%;
+            align-items: center;
+            justify-content:space-between;
+            margin-top: 5px;
+        }
+
+        button{
+            background-color: black;
+            color:azure;
+            border:1px grey solid;
+            padding: 5px, 10px, 5px, 10px;
+            margin:5px;
+        }
+
+        ul li{
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .interfaces {
+            background-color: darkgrey;
+            border: 2px, solid, grey;
+            padding: 10px;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        
+    </style>
+
+    
+
+
+</head>
+<body>
+    <h1>Consome a API do The Movie DB</h1>
+    <div style="display: flex;">
+        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <div class="interfaces">
+                <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+                <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+                <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+                <button id="login-button" disabled>Login</button>
+            </div>
+            <div class="interfaces" id="lists-container">
+                <input id="ListaName" placeholder="Nome da Lista" onchange="preencherNomeLista(event)">
+                <input id="ListaDesc" placeholder="Descrição da Lista" onchange="preencherDescLista(event)">
+                <button id="add-new-list-button">Criar nova Lista</button>
+            </div>
+            <div class="interfaces" id="movie-container" style="margin-top: 20px">
+                <input id="IdFilme" placeholder="Id do filme" onchange="preencherMovieLista(event)">
+                <input id="IdLista" placeholder="Id da lista" onchange="preencherLista(event)">
+                <button id="add-list-button">Adicionar Filme a lista</button>
+            </div>
+        </div>
+        <div class="interfaces" id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Escreva...">
+            <button id="search-button">Pesquisar Filme</button>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div  style="margin-left: 20px" id= "lista"></div>
+        
+      </div>
+
+      
+</body>
+</html>

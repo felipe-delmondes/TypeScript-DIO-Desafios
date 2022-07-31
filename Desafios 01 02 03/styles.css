@@ -1,0 +1,24 @@
+.campos {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border:1px solid green;
+
+}
+
+.campos span{
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 3px;
+    border-radius: 5%;
+    color:brown
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border:1px solid blue;
+    background-color: cornflowerblue;
+}
