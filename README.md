@@ -30,6 +30,20 @@ Todos os recursos online estão publicados no ![GitHub](https://img.shields.io/b
 
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
+## Preview
+
+### Interface que consome a API do The Movie DB
+<div align="center">
+<img src="https://user-images.githubusercontent.com/67472888/182050126-031983f4-9e1f-42b0-9a33-0dcb32734fd7.PNG" width=70%"/>
+</div>
+
+### Lista e filme adicionados com sucesso!
+<div align="center">
+<img src="https://user-images.githubusercontent.com/67472888/182050125-f83e33ab-2467-49e2-946b-0d12d0e101bf.PNG" width=70%"/>
+</div>
+
+
+
 ## About me
 
 
